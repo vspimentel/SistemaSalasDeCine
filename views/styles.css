@@ -1,0 +1,156 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --DarkBlue: #342D42;
+    --Red: #CD3446;
+    --Yellow: #EED345;
+    --White: #FFFFFF
+}
+
+body{
+    background-color: var(--DarkBlue);
+}
+
+h1{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: normal;
+    color: var(--White);
+    font-size: 35px;
+    margin-bottom: 30px;
+}
+
+.titles{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: bold;
+    color: var(--Yellow);
+    font-size: 25px;
+    margin-bottom: 6px;
+    text-align: center;
+    width: 180px;
+
+}
+
+.container{
+    width: 100%;
+    display: flex;
+}
+
+.lat_menu{
+    width: 6%;
+    background-color: var(--Red);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 6px;
+    padding-top: 20px;
+    gap: 20px;
+}
+
+.menu_opt{
+    background-color: var(--DarkBlue);
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.content{
+    padding: 35px;
+    width: 65%;
+    min-height: 610px;
+    display: flex;
+    flex-direction: column;
+}
+
+.movie_row{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    margin-bottom: 30px;
+}
+
+.movie_data{
+    display: flex;
+    flex-direction: column;
+}
+
+.movie_pic{
+    width: 180px;
+    height: 270px;
+    border: 1px solid var(--Yellow);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.movie{
+    height: 240px;
+    width: 155px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: flex;
+    justify-content: flex-end;
+    padding: 7px;
+    gap: 5px;
+}
+
+.schedule_row{
+    display: flex;
+    justify-content: space-between;
+}
+
+.movie_tag{
+    padding: 3px;
+    background-color: var(--Red);
+    color: var(--White);
+    font-size: 14px;
+    border-radius: 5px;
+    height: min-content;
+}
+
+.time_tag{
+    padding: 5px;
+    background-color: var(--Yellow);
+    color: var(--DarkBlue);
+    font-size: 18px;
+    border-radius: 8px;
+    width: min-content;    
+}
+
+.ticket_title_tag{
+    padding: 5px;
+    background-color: var(--DarkBlue);
+    color: var(--White);
+    font-size: 18px;
+    border-radius: 8px;
+    width: min-content;    
+}
+
+.tickets{
+    padding: 30px;
+    width: 29%;
+    background-color: var(--Red);
+}
+
+.ticket{
+    width: 100%;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    background-color: var(--White);
+    border-radius: 16px;
+}
+
+.ticket_title{
+    color: var(--DarkBlue);
+    font-size: 27px;
+}
