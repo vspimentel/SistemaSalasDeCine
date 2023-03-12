@@ -15,6 +15,11 @@
     --White: #FFFFFF
 }
 
+html, body
+{
+    height: 100%;
+}
+
 body{
     background-color: var(--DarkBlue);
 }
@@ -39,6 +44,7 @@ h1{
 .container{
     width: 100%;
     display: flex;
+    height: 100%;
 }
 
 .lat_menu{
@@ -246,3 +252,46 @@ h1{
     background: var(--Red);
     cursor: pointer;
 }
+
+.report_buttons {
+    width: 110px;
+    height: 32px;      
+    border: 2.2px solid white;
+    border-radius: 20px;
+    text-align: center;
+    display: inline-block;
+    font-size: 19px;
+    font-family: 'Poppins';
+    cursor: pointer;
+    color: var(--White);
+    background-color: transparent;
+    font-weight: 400;
+
+  }
+  .report_buttons:hover {
+    background-color: var(--White);
+    color: black;
+    font-weight: 500;
+  }
+
+  table {
+    display: flex;
+    flex-direction: column;
+    padding: 8px;
+    width: 1034px;
+    height: 245px;
+    left: 203px;
+    top: 231px;
+    background: #413A4F;
+    border-radius: 10px;
+    border-collapse: collapse;
+    padding-bottom: 0;
+}
+th, td {
+    border-bottom: 1px solid #ddd;
+    color: white;
+    font-size: 14px;
+    font-family: 'Montserrat';
+    text-align: left;
+    padding: 8px;
+  }
