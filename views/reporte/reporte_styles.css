@@ -15,7 +15,7 @@
     --White: #FFFFFF
 }
 
-body
+html,body
 {
     height: 100%;
 }
@@ -188,6 +188,7 @@ h1{
     padding-top: 35px;
     width: 29%;
     background-color: var(--Red);
+    height: 100%;
 }
 
 .ticket{
