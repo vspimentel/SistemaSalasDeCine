@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cartelera</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="lat_menu">
+            <div class="menu_opt">
+                <img src="../../resource/svg/movie.svg" height="30px">
+            </div>
+            <div class="menu_opt">
+                <img src="../../resource/svg/food.svg" height="30px">
+            </div>
+            <div class="menu_opt">
+                <img src="../../resource/svg/stats.svg" height="30px">
+            </div>
+            <div class="menu_opt">
+                <img src="../../resource/svg/log-out.svg" height="30px">
+            </div>
+        </div>
+        <div class="content">
+            <h1>Cartelera</h1>
+            <div class="movie_row">
+                <div class="movie_data">
+                    <div class="movie_pic">
+                        <div style="background-image: url(../../resource/images/movie.jpg);" class="movie">
+                            <div class="movie_tag">2D</div>
+                            <div class="movie_tag">SUB</div>
+                        </div>
+                    </div>
+                    <div class="titles">Pelicula 1</div>
+                    <div class="schedule_row">
+                        <div class="time_tag" onclick="addTicket(1, this)">
+                            <div hidden="hidden" id="hall">Sala 1</div>
+                            <div id="hour">16:00</div>
+                        </div>
+                        <div class="time_tag" onclick="addTicket(1, this)">
+                            <div hidden="hidden" id="hall">Sala 1</div>
+                            <div id="hour">18:00</div>
+                        </div>
+                        <div class="time_tag" onclick="addTicket(1, this)">
+                            <div hidden="hidden" id="hall">Sala 1</div>
+                            <div id="hour">20:00</div>
+                        </div>
+                    </div>
+                    <div class="schedule_row">
+                        <div class="time_tag" onclick="addTicket(1, this)">
+                            <div hidden="hidden" id="hall">Sala 1</div>
+                            <div id="hour">16:00</div>
+                        </div>
+                        <div class="time_tag" onclick="addTicket(1, this)">
+                            <div hidden="hidden" id="hall">Sala 3</div>
+                            <div id="hour">18:00</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="ticket_list">
+            <h1>Boletos</h1>
+            <div id="ticket_list"></div>
+            <div class="print_tickets">
+                <div>Total: <span style="font-size: 25px; color: var(--Red);" id="total_price">0Bs</span></div>
+                <div class="print_button">Imprimir</div>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="script.js"></script>
+</html>
