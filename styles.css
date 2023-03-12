@@ -254,6 +254,13 @@ h1{
     cursor: pointer;
 }
 
+.report_options{
+    display: flex;
+    justify-content: left;
+    gap: 15px;
+    margin-bottom: 20px;
+}
+
 .report_buttons {
     width: 110px;
     height: 32px;      
