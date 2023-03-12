@@ -44,7 +44,8 @@ h1{
 .container{
     width: 100%;
     display: flex;
-    height: auto;
+    min-height: 100%;
+    height: max-content;
 }
 
 .lat_menu{
