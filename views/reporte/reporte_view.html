@@ -10,23 +10,37 @@
 <body>
     <div class="container">
         <div class="lat_menu">
-            <div class="menu_opt">
-                <img src="../../resource/svg/movie.svg" height="30px">
+            <div class="menu_opt" >
+                <a href="../cartelera/cartelera_view.html" style="height:30px;"><img src="../../resource/svg/movie.svg" height="30px"></a> 
             </div>
             <div class="menu_opt">
-                <img src="../../resource/svg/food.svg" height="30px">
+                <a href="../snacks/snacks_view.html" style="height:30px;"><img src="../../resource/svg/food.svg" height="30px"></a>
             </div>
-            <div class="menu_opt">
-                <img src="../../resource/svg/stats.svg" height="30px">
+            <div class="menu_opt_selected">
+                <a href="../reporte/reporte_view.html" style="height:30px;"><img src="../../resource/svg/stats.svg" height="30px"></a>
             </div>
             <div class="menu_opt">
                 <img src="../../resource/svg/log-out.svg" height="30px">
             </div>
         </div>
-        <div class="content">
-            <h1>Reportes</h1>
-            <div style="margin-bottom: 20px;">
-                <div class="report_buttons">Boletos</div>
+        <div class="content_report">
+            <h1>Reporte</h1>
+            <div class="report_settings">
+                <div class="report_options">
+                    <div class="report_buttons">Boletos</div>
+                    <div class="report_buttons">Snacks</div>
+                    <div class="report_buttons">Total</div>
+                </div>
+                <div class="report_date">
+                    <div class="date_picker">
+                        <div class="date_picker_title">Desde</div>
+                        <input type="date" name="date" id="date">
+                    </div>
+                    <div class="date_picker">
+                        <div class="date_picker_title">Hasta</div>
+                        <input type="date" name="date" id="date">
+                    </div>
+                </div>
             </div>
             
             <table>
