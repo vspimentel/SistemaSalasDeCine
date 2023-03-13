@@ -14,9 +14,13 @@
     --White: #FFFFFF
 }
 
+body
+{
+    height: 100%;
+}
+
 body{
     background-color: var(--DarkBlue);
-    height: 100%;
 }
 
 h1{
@@ -111,16 +115,16 @@ h1{
     margin-bottom: 10px;
 }
 
-.movie{
+.movie_ad{
     height: 240px;
     width: 155px;
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
     display: flex;
-    justify-content: flex-end;
+    flex-direction: column;
     padding: 7px;
-    gap: 5px;
+    justify-content: space-between;
 }
 
 .schedule_row{
@@ -151,54 +155,6 @@ h1{
     box-shadow: 0px 4px 4px 0px #00000040;
 }
 
-.time_tag:hover{
-    box-shadow: 0px 0px 0px 0px;
-    color: var(--Red);
-    cursor: pointer;
-}
-
-.ticket_title_tag{
-    padding: 4px;
-    background-color: var(--DarkBlue);
-    color: var(--White);
-    font-size: 13px;
-    font-stretch:ultra-condensed;
-    border-radius: 5px;
-    width: min-content;    
-    height: 25px;
-    line-height: 18px;
-}
-
-.ticket_list{
-    padding: 25px;
-    padding-top: 35px;
-    width: 29%;
-    background-color: var(--Red);
-}
-
-.ticket{
-    width: 100%;
-    padding: 15px;
-    display: flex;
-    flex-direction: column;
-    background-color: var(--White);
-    border-radius: 16px;
-    gap: 5px;
-    margin-bottom: 20px;
-    box-shadow: 0px 4px 4px 0px #00000040;
-
-}
-
-.ticket_title{
-    color: var(--DarkBlue);
-    font-size: 24px;
-    line-height: 25px;
-}
-
-.ticket_tags{
-    display: flex;
-    gap: 5px;
-}
 
 .edit_buttons{
     display: flex;
@@ -222,41 +178,88 @@ h1{
     cursor: pointer;
 }
 
-.ticket_data{
-    font-size: 13px;
-    vertical-align:middle;
-}
-
-.print_tickets{
-    width: 100%;
-    background-color: var(--White);
-    border-radius: 16px;
-    padding: 5px 15px 5px 15px;
-    color: var(--DarkBlue);
-    font-size: 15px;
+.edit_form{
+    padding: 25px;
+    padding-top: 35px;
+    width: 29%;
+    background-color: var(--Red);
     display: flex;
-    justify-content: space-between;
+    flex-direction: column;
     align-items: center;
 }
 
-.print_button{
+.button{
     display: flex;
     gap: 2px;
     align-items: center;
-    padding: 4px;
-    padding-right: 6px;
+    padding: 5px 15px;
     background-color: var(--DarkBlue);
     color: var(--White);
     font-size: 13px;
     border-radius: 5px;
-    height: 25px;
-    width: 67px;
+    gap: 5px;
     justify-content: center; 
     box-shadow: 0px 4px 4px 0px #00000040;
 }
 
-.print_button:hover{
+.button:hover{
     box-shadow: 0px 0px 0px 0px;
-    background: var(--Red);
+    color: var(--Red);
     cursor: pointer;
 }
+
+
+.label_file{
+    margin-top: 7px;
+    margin-bottom: 20px;
+    display: flex;
+    gap: 2px;
+    align-items: center;
+    padding: 5px 15px;
+    background-color: var(--DarkBlue);
+    color: var(--White);
+    font-size: 18px;
+    border-radius: 5px;
+    gap: 5px;
+    justify-content: center; 
+    box-shadow: 0px 4px 4px 0px #00000040;
+}
+
+.label_file:hover{
+    box-shadow: 0px 0px 0px 0px;
+    color: var(--Red);
+    cursor: pointer;
+}
+
+.input-wrapper{
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.label_text{
+    position: absolute;
+    line-height: 15px;
+    z-index: 1;
+    font-size: 17px;
+    left: 3em;
+    background-color: var(--Red);
+    padding: 0 2px;
+    color: var(--DarkBlue);
+}
+
+.input_text{
+    border: 2px solid var(--DarkBlue);
+    background-color: var(--Red);
+    border-radius: 35px;
+    position: relative;
+    margin: 10px;
+    height: 48px;
+    width: 250px;
+    outline: none;
+    padding: 0 20px;
+    color: var(--White);
+    font-size: 15px;
+}
+
