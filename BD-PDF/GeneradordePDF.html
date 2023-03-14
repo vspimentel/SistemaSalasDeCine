@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test document</title>
+</head>
+<body>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js" integrity="sha512-qZvrmS2ekKPF2mSznTQsxqPgnpkI4DNTlrdUmTzrDgektczlKNRRhy5X5AAOnx5S09ydFYWWNSfcEqDTTHgtNA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/1.3.2/jspdf.debug.js"></script>
+
+    <script>
+        const pdf = new jsPDF('l','','a6');
+        pdf.text('CINE SAS', 25, 10);
+        //Obtener el numero de ID de entrada desde la base de datos
+        pdf.text('ENTRADA 41870', 80, 10);
+        //Obtener desde la base de datos al nombre de la pelicula y el tipo '3D o 2D' y 'DOB o SUB'
+        pdf.text('The Whale',15,28);
+        pdf.text(' - ',44,28);
+        pdf.text('2D',52,28);
+        pdf.text('(SUB)',60,28);
+        pdf.text('SALA : 2',15,38);
+        pdf.text(' - ',44,38);
+        pdf.text('HORA: 18:30',52,38);
+        pdf.text('ASIENTO : ',15,48);
+        pdf.text('35',45,48)
+        pdf.save('Entrada.pdf');
+    </script>
+</body>
+</html>
