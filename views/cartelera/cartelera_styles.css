@@ -89,10 +89,10 @@ h1{
     box-shadow: 0px 4px 4px 0px #00000040;
 }
 
-.content_report{
+.content{
     padding: 35px;
-    width: 94%;
-    height: 100%;
+    width: 65%;
+    min-height: 610px;
     display: flex;
     flex-direction: column;
 }
