@@ -4,9 +4,15 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- <script src="https://d3js.org/d3.v7.min.js"></script> -->
+    
+   
+    
     <title>Reporte</title>
     <link rel="stylesheet" href="reporte_styles.css">
 </head>
+<!-- <body onload="main()"> -->
 <body>
     <div class="container">
         <div class="lat_menu">
@@ -27,9 +33,9 @@
             <h1>Reporte</h1>
             <div class="report_settings">
                 <div class="report_options">
-                    <div class="report_buttons">Boletos</div>
-                    <div class="report_buttons">Snacks</div>
-                    <div class="report_buttons">Total</div>
+                    <div class="report_button_selected">Boletos</div>
+                    <div class="report_button">Snacks</div>
+                    <div class="report_button">Total</div>
                 </div>
                 <div class="report_date">
                     <div class="date_picker">
@@ -42,81 +48,98 @@
                     </div>
                 </div>
             </div>
+            <div class="report_container">
+
             
-            <table>
-                <tr>
-                  <th style="width:120px">Fecha</th>
-                  <th style="width:120px">Día</th>
-                  <th style="width:194px">Película</th>
-                  <th style="width:90px">Tipo</th>
-                  <th style="width:120px">Horario </th>
-                  <th style="width:120px">Precio (Bs)</th>
-                  <th style="width:100px">Cantidad</th>
-                  <th style="width:160px">Ganancia (Bs)</th>
-                </tr>
-                <tr>
-                  <td>01/03/2023</td>
-                  <td>Lunes</td>
-                  <td>Película 1</td>
-                  <td>3D</td>
-                  <td>14:00 - 16:00</td>
-                  <td>35</td>
-                  <td>60</td>
-                  <td>2100</td>
-                </tr>
-                <tr>
-                    <td>01/03/2023</td>
+                <table>
+                    <tr>
+                    <th style="width:120px">Fecha</th>
+                    <th style="width:120px">Día</th>
+                    <th style="width:240px">Película</th>
+                    <th style="width:90px">Tipo</th>
+                    <th style="width:120px">Horario </th>
+                    <th style="width:120px">Precio (Bs)</th>
+                    <th style="width:100px">Cantidad</th>
+                    <th style="width:160px">Ganancia (Bs)</th>
+                    </tr>
+                    <tr>
+                    <td>13/03/2023</td>
                     <td>Lunes</td>
                     <td>Película 1</td>
                     <td>3D</td>
                     <td>14:00 - 16:00</td>
-                    <td>35</td>
-                    <td>60</td>
-                    <td>2100</td>
-                </tr>
-                <tr>
-                    <td>01/03/2023</td>
-                    <td>Lunes</td>
-                    <td>Película 1</td>
-                    <td>3D</td>
-                    <td>14:00 - 16:00</td>
-                    <td>35</td>
-                    <td>60</td>
-                    <td>2100</td>
-                </tr>
-                <tr>
-                    <td>01/03/2023</td>
-                    <td>Lunes</td>
-                    <td>Película 1</td>
-                    <td>3D</td>
-                    <td>14:00 - 16:00</td>
-                    <td>35</td>
-                    <td>60</td>
-                    <td>2100</td>
-                </tr>
-                <tr>
-                    <td>01/03/2023</td>
-                    <td>Lunes</td>
-                    <td>Película 1</td>
-                    <td>3D</td>
-                    <td>14:00 - 16:00</td>
-                    <td>35</td>
-                    <td>60</td>
-                    <td>2100</td>
-                </tr>
-                <tr>
-                    <th style="border-bottom: 0">Total (Bs)</th>
-                    <td style="border-bottom: 0"></td>
-                    <td style="border-bottom: 0"></td>
-                    <td style="border-bottom: 0"></td>
-                    <td style="border-bottom: 0"></td>
-                    <td style="border-bottom: 0"></td>
-                    <td style="border-bottom: 0"></td>
-                    <th style="border-bottom: 0">12600</th>
-                </tr>
-            </table>
+                    <td>30</td>
+                    <td>30</td>
+                    <td>900</td>
+                    </tr>
+                    <tr>
+                        <td>13/03/2023</td>
+                        <td>Lunes</td>
+                        <td>Película 2</td>
+                        <td>2D</td>
+                        <td>14:00 - 16:00</td>
+                        <td>30</td>
+                        <td>40</td>
+                        <td>1200</td>
+                    </tr>
+                    <tr>
+                        <td>13/03/2023</td>
+                        <td>Lunes</td>
+                        <td>Película 3</td>
+                        <td>3D</td>
+                        <td>14:00 - 16:00</td>
+                        <td>35</td>
+                        <td>28</td>
+                        <td>980</td>
+                    </tr>
+                    <tr>
+                        <td>13/03/2023</td>
+                        <td>Lunes</td>
+                        <td>Película 4</td>
+                        <td>3D</td>
+                        <td>14:00 - 16:00</td>
+                        <td>35</td>
+                        <td>35</td>
+                        <td>1225</td>
+                    </tr>
+                    <tr>
+                        <td>13/03/2023</td>
+                        <td>Lunes</td>
+                        <td>Película 5</td>
+                        <td>2D</td>
+                        <td>14:00 - 16:00</td>
+                        <td>30</td>
+                        <td>20</td>
+                        <td>600</td>
+                    </tr>
+                    <tr>
+                        <th style="border-bottom: 0">Total (Bs)</th>
+                        <td style="border-bottom: 0"></td>
+                        <td style="border-bottom: 0"></td>
+                        <td style="border-bottom: 0"></td>
+                        <td style="border-bottom: 0"></td>
+                        <td style="border-bottom: 0"></td>
+                        <td style="border-bottom: 0"></td>
+                        <th style="border-bottom: 0">4905</th>
+                    </tr>
+                </table>
+            </div>
+
+            <div class="charts">
+                <div class="chart1"><canvas id="chart1"></canvas></div>
+                <div class="chart2"><canvas id="chart2"></canvas></div>
+            </div>
+
+            
+            
+     
+                
+          
         </div>
         
     </div>
+    
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="report_script.js"></script>
 </body>
 </html>
